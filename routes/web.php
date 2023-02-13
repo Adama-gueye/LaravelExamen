@@ -25,9 +25,9 @@ Route::get('/type/ajout', function () {
     return view('type.ajout');
 })->name('ajoutType');
 
-Route::get('/formation/ref',[FormationController::class,'nbre'])->name('formation.ref');
-Route::get('/formation/type',[ReferentielController::class,'nbre'])->name('referentiel.type');
-Route::get('/candidat/form',[CandidatController::class,'nbre'])->name('candidat.form');
+Route::get('/formation/reference',[FormationController::class,'nbres'])->name('formation.ref');//
+Route::get('/formation/type',[FormationController::class,'nbre'])->name('formation.type');
+Route::get('/candidat/formation',[CandidatController::class,'nbre'])->name('candidat.form');
 
 
 Route::get('/formation/ajout',[FormationController::class,'ajout'])->name('ajoutFormation');

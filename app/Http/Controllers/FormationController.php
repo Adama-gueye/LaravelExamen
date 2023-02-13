@@ -44,7 +44,13 @@ class FormationController extends Controller
         $types = Type::with('referentiels')->get();
 
         return view('formation.referentiel', compact('types'));
-    }
+    }//formation/type
+
+    public function nbres()
+    {
+        $referentiels = Referentiel::withCount('formations')->get();
+        return view('referentiel.type',compact('referentiels'));
+    }//formation/ref
 
 
    public function rules()

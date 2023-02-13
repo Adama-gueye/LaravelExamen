@@ -28,10 +28,10 @@
             <a class="nav-link mx-1" href="{{ route('candidat.form') }}"><i class="fas fa-bell pe-1"></i>Candidats/Formation</a>
           </li>
           <li>
-            <a class="nav-link mx-1" href="{{ route('formation.ref') }}"><i class="fas fa-bell pe-1"></i>Formations/Type</a>
+            <a class="nav-link mx-1" href="{{ route('formation.type') }}"><i class="fas fa-bell pe-1"></i>Formations/Type</a>
           </li>
           <li>
-            <a class="nav-link mx-1" href="{{ route('referentiel.type') }}"><i class="fas fa-bell pe-1"></i>Référentiels/Type</a>
+            <a class="nav-link mx-1" href="{{ route('formation.ref') }}"><i class="fas fa-bell pe-1"></i>Formations/Référentiel</a>
           </li>
 
         </ul>  

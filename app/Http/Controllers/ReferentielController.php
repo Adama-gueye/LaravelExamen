@@ -49,10 +49,6 @@ class ReferentielController extends Controller
        ];
    }
 
-    public function nbre(){
-        $types = Type::withCount('referentiels')->get();
-        return view('referentiel.type',compact('types'));
-   }
    
 
     /**
